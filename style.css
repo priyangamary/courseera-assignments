@@ -1,0 +1,97 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff8f5;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 2em;
+}
+h2{
+  text-align: center;
+  padding: 20px;
+  font-size: 2em;
+  color:crimson;
+}
+
+/* Section Container */
+.section-container {
+  padding: 20px;
+}
+
+/* Section Styling */
+.section {
+  position: relative;
+  border: 1px solid black;
+  padding: 40px 20px 20px 20px;
+  margin: 10px;
+  background-color: #ffe5ec; /* default pastel, overridden per section */
+  float: left;
+  width: 100%; /* Mobile default */
+}
+
+/* Section Titles */
+.section-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ffb3c6;
+  padding: 5px 10px;
+  border: 1px solid black;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+/* Individual Section Colors */
+#chicken {
+  background-color: #ffd6dc;
+}
+
+#chicken .section-title {
+  background-color: #ffb3c6;
+}
+
+#beef {
+  background-color: #d0f4de;
+}
+
+#beef .section-title {
+  background-color: #a0e8af;
+}
+
+#sushi {
+  background-color: #d6e0f0;
+}
+
+#sushi .section-title {
+  background-color: #a2bce0;
+}
+
+/* Tablet View */
+@media (min-width: 768px) and (max-width: 991px) {
+  .section {
+    width: 48%;
+    margin: 1%;
+  }
+
+  .section:nth-child(3) {
+    width: 98%;
+  }
+}
+
+/* Desktop View */
+@media (min-width: 992px) {
+  .section {
+    width: 30%;
+    margin: 1.66%;
+  }
+}
